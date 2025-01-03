@@ -71,8 +71,13 @@
 
 @media screen and (max-width: 1024px) {
     .swipe-button {
-        height: initial;
-        width: initial;
+        padding: 0.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .buttons {
+        gap: 2rem;
     }
 
     .swipeable-card-header-style {

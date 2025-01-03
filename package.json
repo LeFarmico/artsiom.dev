@@ -11,12 +11,14 @@
     "react-markdown": "^9.0.1",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.2",
     "react-type-animation": "^3.2.0",
     "remark-gfm": "^4.0.0",
     "web-vitals": "^4.2.4"
   },
   "homepage": "https://lefarmico.github.io/artsiom.dev/",
   "scripts": {
+    "clean": "rm -rf build && npx gh-pages-clean",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

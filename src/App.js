@@ -5,10 +5,24 @@ import Page from "./component/page/PageComponent";
 import GridLayout from "./component/gridLayout/GridLayout.js";
 import InfoCard from "./component/infoCard/InfoCard.js";
 import ContentCard from "./component/contentCard/ContentCard.js";
+import notify from "./component/notification/notify.js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import "./assets/colors/Colors.css";
 
 const App = () => {
+  const handleCopy = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        notify("Email is copied to clipboard!", "success");
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   return (
     <div className="App">
       <Page>
@@ -20,7 +34,7 @@ const App = () => {
           advocate, I focus on seamless cross-platform solutions."
           gitHubUrl="https://github.com/LeFarmico"
           linkedinUrl="https://www.linkedin.com/in/artsiom-zharnikovich-46726b1b5/"
-          email="mailto:flyingtomars.m@gmail.com"
+          email="flyingtomars.m@gmail.com"
           spotifyUrl="https://open.spotify.com/user/lefarmico?si=71851c13a43b432a"
           instagramUrl="https://www.instagram.com/lefarmico/"
         />
@@ -92,10 +106,11 @@ const App = () => {
             header="Contact me"
             description="If you want to talk to me. Please contact me by email"
             buttonLabel="Send email"
-            url="mailto:flyingtomars.m@gmail.com"
+            onClick={() => handleCopy("flyingtomars.m@gmail.com")}
           />
         </GridLayout>
       </Page>
+      <ToastContainer />
     </div>
   );
 };

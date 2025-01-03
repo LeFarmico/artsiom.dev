@@ -7,6 +7,7 @@ import InstagramIcon from "../icon/InstagramIcon";
 import SpotifyIcon from "../icon/SpotifyIcon";
 import TelegramIcon from "../icon/TelegramIcon";
 import { TypeAnimation } from "react-type-animation";
+import notify from "../notification/notify";
 
 function HeaderCard({
   greetingMessage,
@@ -19,6 +20,17 @@ function HeaderCard({
   instagramUrl,
   telegramUrl,
 }) {
+  const handleCopy = () => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        notify("Email is copied to clipboard!", "success");
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   return (
     <div className="header-card">
       <div className="top-content">
@@ -46,9 +58,9 @@ function HeaderCard({
           <a href={linkedinUrl}>
             <LinkedinIcon />
           </a>
-          <a href={email}>
+          <div onClick={handleCopy}>
             <MailIcon />
-          </a>
+          </div>
           <a href={spotifyUrl}>
             <SpotifyIcon />
           </a>
