@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/artsiom.dev/static/css/main.e0466122.css",
-    "main.js": "/artsiom.dev/static/js/main.56916393.js",
+    "main.css": "/artsiom.dev/static/css/main.3b1508eb.css",
+    "main.js": "/artsiom.dev/static/js/main.467763e1.js",
     "static/media/GeneralSans-Regular.woff": "/artsiom.dev/static/media/GeneralSans-Regular.c8cfd56b3d5c42904672.woff",
     "static/media/GeneralSans-Regular.woff2": "/artsiom.dev/static/media/GeneralSans-Regular.33c07568e483102927ef.woff2",
     "static/media/Thunder-BlackHC.woff": "/artsiom.dev/static/media/Thunder-BlackHC.67871320b34c0523da60.woff",
@@ -9,11 +9,11 @@
     "static/media/Thunder-BlackHC.woff2": "/artsiom.dev/static/media/Thunder-BlackHC.a51ea0bfacbad547083a.woff2",
     "static/media/Thunder-BlackLC.woff2": "/artsiom.dev/static/media/Thunder-BlackLC.fe8ef809c3bcee0e237d.woff2",
     "index.html": "/artsiom.dev/index.html",
-    "main.e0466122.css.map": "/artsiom.dev/static/css/main.e0466122.css.map",
-    "main.56916393.js.map": "/artsiom.dev/static/js/main.56916393.js.map"
+    "main.3b1508eb.css.map": "/artsiom.dev/static/css/main.3b1508eb.css.map",
+    "main.467763e1.js.map": "/artsiom.dev/static/js/main.467763e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0466122.css",
-    "static/js/main.56916393.js"
+    "static/css/main.3b1508eb.css",
+    "static/js/main.467763e1.js"
   ]
 }
