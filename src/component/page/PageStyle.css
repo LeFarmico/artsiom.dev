@@ -1,0 +1,11 @@
+.page-style {
+    height: 100vh; /* Maintain full viewport height */
+    overflow: auto; /* Allow scrolling if needed */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center child components vertically */
+    align-items: center; /* Center child components horizontally */
+    padding: 1.3vw; /* Optional padding for the Page component */
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
+    background-color: #1a1a1a;
+}

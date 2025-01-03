@@ -1,0 +1,27 @@
+@import "../../assets/colors/Colors.css";
+
+.icon-style {
+    height: 1.5vw;
+    width: 1.5vw;
+    cursor: "pointer";
+    transition: "0.3s";
+}
+
+.icon-logo-style {
+    width: 4vw;
+    height: 4vw;
+    cursor: "pointer";
+    transition: transform 0.2s ease;
+    color: var(--background-color);
+}
+
+.icon-logo-style:hover {
+    transform: rotate(10deg) scale(120%);
+}
+
+@media screen and (max-width: 1024px) {
+    .icon-style {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

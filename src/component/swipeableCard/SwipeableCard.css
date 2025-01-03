@@ -1,0 +1,87 @@
+@import "../../assets/colors/Colors.css";
+
+.swipeable-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: var(--accent-two-color);
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-row: span 2;
+}
+
+.swipeable-card-header-style {
+    font-size: 2.5vw;
+    font-family: "Thunder-black", sans-serif;
+    color: var(--on-primary-color);
+    text-transform: uppercase;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.swipeable-content-style {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    box-sizing: border-box;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    color: var(--on-primary-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    margin-top: 0.5vw;
+    box-sizing: border-box;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+}
+
+.swipe-button {
+    border: none;
+    border-radius: 100px;
+    padding: 0.8vw;
+    background: var(--on-primary-color);
+    color: var(--on-background-color);
+    cursor: pointer;
+    height: 1.2vw;
+    width: 1.2vw;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.swipe-button:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .swipe-button {
+        height: initial;
+        width: initial;
+    }
+
+    .swipeable-card-header-style {
+        font-size: 2.5rem;
+    }
+
+    .swipeable-content-style {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+}

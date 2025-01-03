@@ -1,0 +1,128 @@
+@import "../../assets/colors/Colors.css";
+
+.header-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    padding: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-content {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.name {
+    position: relative;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--on-primary-color);
+    font-family: "Thunder-black", sans-serif;
+    text-transform: uppercase;
+}
+
+.introduction {
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--on-primary-color);
+    font-family: "General-sans", sans-serif;
+    max-width: 25ch;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    margin-left: auto;
+}
+
+.introduction-content {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-content {
+    margin-top: 2vw;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.greeting {
+    position: relative;
+    max-width: 16ch;
+    font-size: 6vw;
+    color: var(--on-primary-color);
+    font-family: "Thunder-black", sans-serif;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.type::after {
+    content: "|";
+    animation: cursor 1.1s infinite step-start;
+    font-family: "General-sans", sans-serif;
+}
+
+@keyframes cursor {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.9vw;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.social-icons a {
+    color: var(--on-primary-color);
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(120%);
+}
+
+@media screen and (max-width: 1024px) {
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .introduction {
+        font-size: 1rem;
+    }
+}
